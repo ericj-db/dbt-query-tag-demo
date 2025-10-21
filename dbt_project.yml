@@ -1,0 +1,13 @@
+name: "query_tags_demo"
+version: "1.0"
+config-version: 2
+
+profile: query_tags_demo
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages", "logs"]
+
+models:
+  query_tags_demo:
+    +materialized: table

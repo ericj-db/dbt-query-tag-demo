@@ -1,0 +1,12 @@
+query_tags_demo:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: "<YOUR CATALOG>"
+      schema:  "<YOUR SCHEMA>"
+      host:    "https://e2-dogfood.staging.cloud.databricks.com"
+      http_path: "/sql/1.0/warehouses/e9ef6a527497a91d"
+      token:   "<YOUR PAT>"
+      threads: 4
+      query_tags: '{"cost_center": "project_override"}'

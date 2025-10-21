@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: query_tags_demo
+    config:
+      query_tags: '{"team": "model_override_team"}'
